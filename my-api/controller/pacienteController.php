@@ -21,5 +21,17 @@ class pacienteController
     {
         return pacienteModel::delete($id);
     }
+
+    // Registrar un nuevo usuario
+    public function register($datos)
+    {
+        return pacienteModel::register($datos);
+    }
+
+    // Iniciar sesión
+    public function login($matricula, $contra)
+    {
+        return pacienteModel::login($matricula, $contra);
+    }
 }
 ?>
